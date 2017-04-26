@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <title>NotToday</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Botón 01 -->
+      <div data-role="page" id="request">
+        <div data-role="header" style="background-color: darkturquoise;">
+              <h1><b>CONTACTOS</b></h1>
+        </div> 
+        <div data-role="content">
+            
+            <div data-role="collapsible-set">
+
+				<div id="flotante2">
+                    <p><b><</b></p>
+                </div>
+                <div class="opciones" data-role="collapsible">
+                    <h3>Peter Parker</h3>
+                    <p><b>Telf:</b> 911 11 11 11</p>
+                    <p><b>Dirección:</b> Calle Don Bosco, 215, 08224 Tarrasa, Barcelona</p>
+                    <p><b>GPS:</b> +66º32' 37,11" +25.50' 51.44</p>
+                    
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#request" class="ui-btn-active">Llamar</a></li>  
+                            <li><a href="#Peter">Mas</a></li>
+                            <li><a href="#edit">Editar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+								<div id="flotante2">
+                    <p><b><</b></p>
+                </div>
+
+                <div class="opciones" data-role="collapsible">
+                    <h3>Clark Kent</h3>
+                    <p><b>Telf:</b> 922 22 22 22</p>
+                    <p><b>Dirección:</b> Carrer Major, 46, 08221 Terrassa, Barcelona</p>
+                    <p><b>GPS:</b> +66º32' 37,11" +25.50' 51.44</p>
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#request" class="ui-btn-active">Llamar</a></li>
+                            <li><a href="#Clark">Mas</a></li>
+                            <li><a href="#edit">Editar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+								<div id="flotante2">
+                    <p><b><</b></p>
+                </div>
+
+                <div class="opciones" data-role="collapsible">
+                    <h3>Manolito Gafotas</h3>
+                    <p><b>Telf:</b> 933 33 33 33</p>
+                    <p><b>Dirección:</b> Rúa Ramón y Cajal, 45, 15006 A Coruña</p>
+                    <p><b>GPS:</b> +62º12' 17,13" +35.50' 91.94</p>
+                    
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#request" class="ui-btn-active">Llamar</a></li>
+                            <li><a href="#Manolito">Mas</a></li>
+                            <li><a href="#edit">Editar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+				
+								<div id="flotante2">
+                    <p><b><</b></p>
+                </div>
+
+                <div class="opciones" data-role="collapsible">
+                    <h3>Santa Claus</h3>
+                    <p><b>Telf:</b> 984 34 56 78</p>
+                    <p><b>Dirección:</b> Joulupukin Pajakylà (Rovaniemi)</p>
+                    <p><b>GPS:</b> +66º32' 37,11" +25.50' 51.44</p>
+                    
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#request" class="ui-btn-active">Llamar</a></li>
+                            <li><a href="#more">Mas</a></li>
+                            <li><a href="#edit">Editar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+				
+				<div id="flotante2">
+                    <p><b><</b></p>
+                </div>
+
+                <div class="opciones" data-role="collapsible">
+                    <h3>Ororo Iqadi Monroe</h3>
+                    <p><b>Telf:</b> 944 44 44 44</p>
+                    <p><b>Dirección:</b> Monroe Míchigan EE. UU.</p>
+                    <p><b>GPS:</b> +02º92' 97,13" +90.20' 22.17</p>
+					
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#request" class="ui-btn-active">Llamar</a></li>
+                            <li><a href="#Monroe">Mas</a></li>
+                            <li><a href="#edit">Editar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+								<div id="flotante2">
+                    <p><b><</b></p>
+                </div>
+
+                <div class="opciones" data-role="collapsible">
+                    <h3>Jean Grey</h3>
+                    <p><b>Telf:</b> 955 55 55 55</p>
+                    <p><b>Dirección:</b>Carrer de Laureà Miró, 401, 08980 Sant Feliu de Llobregat, Barcelona</p>
+                    <p><b>GPS:</b> +15º55' 95,63" +70.70' 77.77</p>
+                    
+                    <nav data-role="navbar">
+                        <ul>
+                            <li><a href="#request" class="ui-btn-active">Llamar</a></li>
+                            <li><a href="#Jean">Mas</a></li>
+                            <li><a href="#edit">Editar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="flotante">
+                    <p><b>+</b></p>
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+	   </div> 
+    
+        
+	   
+	   <!-- Peter MAPA -->
+	   
+	    <div data-role="page" id="Peter">
+        <div data-role="header" style="background-color: cornflowerblue;">
+              <h1><b> Mas -> Peter Parker</b></h1>
+        </div> 
+        <div data-role="content">
+            <center>
+            <h3><b>Peter Parker</b></h3>
+            <p><b>Telf:</b> 911 11 11 11</p>
+            <p><b>Dirección:</b> Calle Don Bosco, 215, 08224 Tarrasa, Barcelona</p>
+            <p><b>GPS:</b> +66º32' 37,11" +25.50' 51.44</p>
+            <p><b>Website:</b><a href="http://Peter.com">http://Peter.com</a></p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.30490093132!2d1.9935269158230893!3d41.56264527924851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492985e3e5ced%3A0x76ea794d90663db8!2sCarrer+de+Dom+Bosco%2C+215%2C+08224+Terrassa%2C+Barcelona!5e0!3m2!1ses!2ses!4v1491850956909" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="https://www.google.es/maps/place/Calzados+Piter/@41.5683796,2.0007179,15z/data=!4m8!1m2!2m1!1spiter!3m4!1s0x0:0xec591d92700d840e!8m2!3d41.562638!4d1.9957218">Abrir en Maps</a></li>
+                    <li><a href="#request">Atrás</a></li>
+                </ul>
+            </nav>
+            </center>
+        </div> 
+        <div data-role="footer">
+                <h4>Joel Y Juan Carlo</h4>
+        </div> 
+	   </div> 
+	   
+	   
+	           <!-- Clark Kent MAPA --> 
+    <div data-role="page" id="Clark">
+        <div data-role="header" style="background-color: cornflowerblue;">
+              <h1><b>Mas -> Clark Kent</b></h1>
+        </div> 
+        <div data-role="content">
+            <center>
+            <h3><b>Clark Kent</b></h3>
+            <p><b>Telf:</b> 922 22 22 22 </p>
+            <p><b>Dirección:</b>Carrer Major, 46, 08221 Terrassa, Barcelona</p>
+            <p><b>GPS:</b> +66º32' 37,11" +25.50' 51.44</p>
+            <p><b>Website:</b><a href="http://Clarks.com">http://Clarks.com</a></p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191042.81018746673!2d1.8693903710694533!3d41.56829427772538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36361dfe78f52343!2sClarks!5e0!3m2!1ses!2ses!4v1491848778441" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="https://www.google.es/maps/place/Clarks/@41.5682943,1.8693904,11z/data=!4m8!1m2!2m1!1sClark+Kent!3m4!1s0x0:0x36361dfe78f52343!8m2!3d41.5612612!4d2.0091677">Abrir en Maps</a></li>
+                    <li><a href="#request">Atrás</a></li>
+                </ul>
+            </nav>
+            </center>
+        </div> 
+        <div data-role="footer">
+                <h4>Joel Y Juan Carlo</h4>
+        </div> 
+	   </div> 
+	   
+	   <!-- Manolito MAPA --> 
+    <div data-role="page" id="Manolito">
+        <div data-role="header" style="background-color: cornflowerblue;">
+              <h1><b>Mas -> Manolito Gafotas</b></h1>
+        </div> 
+        <div data-role="content">
+            <center>
+            <h3><b>Manolito Gafotas</b></h3>
+            <p><b>Telf:</b> 944 44 44 44</p>
+            <p><b>Dirección:</b>Rúa Ramón y Cajal, 45, 15006 A Coruña</p>
+            <p><b>GPS:</b> +62º12' 17,13" +35.50' 91.94</p>
+            <p><b>Website:</b><a href="http://Manolito.com">http://Manolito.com</a></p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742662.1388091904!2d-8.962599734374999!3d43.355609000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c9b7c0ae3d9%3A0xdbc34fbcca8c2f7c!2sRestaurante+Manolito!5e0!3m2!1ses!2ses!4v1491849800260" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="https://www.google.es/maps/place/Restaurante+Manolito/@43.355609,-8.9625997,9z/data=!4m8!1m2!2m1!1smanolito!3m4!1s0xd2e7c9b7c0ae3d9:0xdbc34fbcca8c2f7c!8m2!3d43.355609!4d-8.402297">Abrir en Maps</a></li>
+                    <li><a href="#request">Atrás</a></li>
+                </ul>
+            </nav>
+            </center>
+        </div> 
+        <div data-role="footer">
+                <h4>Joel Y Juan Carlo</h4>
+        </div> 
+	   </div> 
+	   
+	   
+	           <!-- SANTA MAPA --> 
+    <div data-role="page" id="more">
+        <div data-role="header" style="background-color: cornflowerblue;">
+              <h1><b>Mas -> Santa Claus</b></h1>
+        </div> 
+        <div data-role="content">
+            <center>
+            <h3><b>Santa Claus</b></h3>
+            <p><b>Telf:</b> 984 34 56 78</p>
+            <p><b>Dirección:</b> Joulupukin Pajakylà (Rovaniemi)</p>
+            <p><b>GPS:</b> +66º32' 37,11" +25.50' 51.44</p>
+            <p><b>Website:</b> http://www.santaclausvillage.info/</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1588.150669251387!2d25.84500871637386!3d66.54361438473515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x442b4e7e543e9979%3A0xd7f9b9e4341d7ed3!2sSanta+Claus+Village!5e0!3m2!1ses!2ses!4v1490782257814" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="https://www.google.es/maps/place/Santa+Claus+Village/@66.5436144,25.8450087,17z/data=!3m1!4b1!4m5!3m4!1s0x442b4e7e543e9979:0xd7f9b9e4341d7ed3!8m2!3d66.5436144!4d25.8471974">Abrir en Maps</a></li>
+                    <li><a href="#request">Atrás</a></li>
+                </ul>
+            </nav>
+            </center>
+        </div> 
+        <div data-role="footer">
+                <h4>Joel Y Juan Carlo</h4>
+        </div> 
+	   </div> 
+	   
+	   	   <!-- Ororo MAPA --> 
+    <div data-role="page" id="Monroe">
+        <div data-role="header" style="background-color: cornflowerblue;">
+              <h1><b>Mas -> Ororo Iqadi Monroe</b></h1>
+        </div> 
+        <div data-role="content">
+            <center>
+            <h3><b>Ororo Iqadi Monroe</b></h3>
+            <p><b>Telf:</b> 944 44 44 44</p>
+            <p><b>Dirección:</b>Monroe Míchigan EE. UU.</p>
+            <p><b>GPS:</b> +02º92' 97,13" +90.20' 22.17</p>
+            <p><b>Website:</b><a href="http://Monroe.com">http://Monroe.com</a></p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47500.587964776445!2d-83.42295908282382!3d41.91894282993938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b6fa6b2cc2bcd%3A0x1aff3b8ff9f0d231!2sMonroe%2C+M%C3%ADchigan%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1491850048791" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="https://www.google.es/maps/place/Monroe,+M%C3%ADchigan,+EE.+UU./@41.9189428,-83.4229591,13z/data=!3m1!4b1!4m5!3m4!1s0x883b6fa6b2cc2bcd:0x1aff3b8ff9f0d231!8m2!3d41.9164343!4d-83.3977101">Abrir en Maps</a></li>
+                    <li><a href="#request">Atrás</a></li>
+                </ul>
+            </nav>
+            </center>
+        </div> 
+        <div data-role="footer">
+                <h4>Joel Y Juan Carlo</h4>
+        </div> 
+	   </div> 
+	   
+	   	   	   <!-- Jean MAPA --> 
+    <div data-role="page" id="Jean">
+        <div data-role="header" style="background-color: cornflowerblue;">
+              <h1><b>Mas -> Jean Grey</b></h1>
+        </div> 
+        <div data-role="content">
+            <center>
+            <h3><b>Jean Grey</b></h3>
+            <p><b>Telf:</b> 955 55 55 55</p>
+            <p><b>Dirección:</b>Carrer de Laureà Miró, 401, 08980 Sant Feliu de Llobregat, Barcelona</p>
+            <p><b>GPS:</b> +15º55' 95,63" +70.70' 77.77</p>
+            <p><b>Website:</b><a href="http://Jeans.com">http://Jeans.com</a></p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191441.21842846865!2d1.8369309070854902!3d41.43338364090209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49a3eaaaaaaab%3A0x98ab525280934bf2!2sPepe+Jeans!5e0!3m2!1ses!2ses!4v1491850441079" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="https://www.google.es/maps/place/Pepe+Jeans/@41.4333836,1.8369309,11z/data=!4m8!1m2!2m1!1sjean!3m4!1s0x12a49a3eaaaaaaab:0x98ab525280934bf2!8m2!3d41.3923144!4d2.03717">Abrir en Maps</a></li>
+                    <li><a href="#request">Atrás</a></li>
+                </ul>
+            </nav>
+            </center>
+        </div> 
+        <div data-role="footer">
+                <h4>Joel Y Juan Carlo</h4>
+        </div> 
+	   </div> 
+	   
+	   
+       <!-- FIN DE MAPAS --> 
+	   
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

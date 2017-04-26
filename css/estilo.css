@@ -1,0 +1,46 @@
+#flotante {
+    background-color: cornflowerblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50%;
+    
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+#flotante > p {
+    text-align: center;
+    margin-top: 9%;
+    font-size: 25px;
+}
+
+
+
+#flotante2 {
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    float: right;
+    height: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: absolute;
+    right: 5%;
+    width: 50px;
+    z-index: 1;
+}
+
+#flotante2 b {
+    float: right;
+    margin-right: 22px;
+    margin-top: 15px;
+    position: inherit;
+}
+
+.ui-collapsible-content.ui-body-inherit {
+    width: 97.3%;
+}
+
+.ui-collapsible-heading-toggle.ui-btn.ui-btn-icon-left.ui-btn-inherit.ui-icon-plus {
+    width: 97.3%;
+}
